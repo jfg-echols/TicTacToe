@@ -1,4 +1,4 @@
-$dir = 'C:\Users\Jono-work\Git\personal\tictactoe\pshell\'
+$dir = 'C:\Users\Jono-work\Git\personal\tictactoe\pshell'
 Set-Location $dir
 
 . ".\PlayerClass.ps1"
@@ -16,13 +16,13 @@ $lastplayer = $null
 do {
     $newGame.turncount +=1
     if ($lastplayer -eq $null) {
-        $newGame.taketurn($Player1)
+        $newGame.taketurn($newgame.board,$Player1)
         $lastplayer = $player1
     } elseif ($lastplayer -eq $player1) {
-        $newGame.taketurn($player2)
+        $newGame.taketurn($newgame.board,$player2)
         $lastplayer = $player2
     } elseif ($lastplayer -eq $player2) {
-        $newGame.taketurn($player1)
+        $newGame.taketurn($newgame.board,$player1)
         $lastplayer = $player1
     }
 

@@ -1,4 +1,4 @@
-$dir = 'C:\users\Jono-work\Git\personal\tictactoe\pshell\classes'
+$dir = 'C:\users\Jono-work\Git\personal\tictactoe\pshell'
 Set-Location $dir
 ".\Player.ps1"
 
@@ -31,7 +31,6 @@ class Game {
         $this.board = $gameboard
     }
     [void] printBoard () {
-        write-host "printing"
         for ($count=0;$count -lt $this.board.Count;$count+=1) {
             #TODO: add number markers
             
@@ -89,7 +88,7 @@ class Game {
             }
         } until ($this.over = $true)
     }
-    [void] takeTurn ($player) {
+    [void] takeTurn ($playboard,$player) {
         $this.printBoard()
         $success = $false
         do {
