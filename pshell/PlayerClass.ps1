@@ -8,10 +8,6 @@ class Player {
         $this.playerIcon = $icon
     }
     [bool] playTurn ($board,$ycoord,$xcoord) {
-        write-host "testing inputs"
-        write-host $board
-        write-host $ycoord
-        write-host $xcoord
         if ($board[$ycoord][$xcoord] -eq ' ') {
             $board[$ycoord][$xcoord] = $this.playerIcon
             return $true

@@ -1,8 +1,8 @@
-$dir = 'C:\users\Jono-work\Git\personal\tictactoe\pshell'
+$dir = 'C:\Users\Jono-work\Git\personal\tictactoe\pshell\'
 Set-Location $dir
 
-. ".\classes\Player.ps1"
-. ".\classes\Game.ps1"
+. ".\PlayerClass.ps1"
+. ".\GameClass.ps1"
 
 
 

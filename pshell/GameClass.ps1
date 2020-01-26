@@ -1,6 +1,6 @@
-$dir = 'C:\users\Jono-work\Git\personal\tictactoe\pshell'
+$dir = 'C:\users\Jono-work\Git\personal\tictactoe\pshell\classes'
 Set-Location $dir
-".\PlayerClass.ps1"
+".\Player.ps1"
 
 class Game {
     [hashtable] $board
